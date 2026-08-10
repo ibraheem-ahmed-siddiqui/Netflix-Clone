@@ -194,6 +194,9 @@ main {
 
 .HeroContent-div h3 {
 
+    /* spacing */
+    margin-bottom: 0.5rem;
+
     /* typography */
     font-weight: 400;
     font-size: 1rem;
@@ -204,7 +207,9 @@ main {
 
     /* layout */
     display: flex;
+    justify-content: center;
     align-items: flex-end;
+    flex-wrap: wrap;
 
     /* spacing */
     gap: 0.8rem;
@@ -267,5 +272,16 @@ main {
     /* colors */
     color: var(--white);
     background-color: var(--accent-red);
+
+}
+
+
+
+@media(max-width: 600px) {
+
+    .emailSignin-div input {
+
+        width: 100%;
+    }
 
 }
