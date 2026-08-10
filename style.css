@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+
+    --white: #FFFFFF;
+
+    --accent-red: #e50914;
+    --accent-red-dark: #C11119;
+}
+
+html,
+body {
+
+    /* sizing */
+    min-height: 100vh;
+    width: 100vw;
+}
+
+main {
+
+    /* sizing */
+    min-height: 100vh;
+    min-width: 100%;
+
+    /* colors */
+    background-color: black;
+}
+
+.hero-section {
+
+    /* positioning */
+    position: relative;
+
+    /* sizing */
+    height: 100vh;
+    width: 100vw;
+
+    /* spacing */
+    margin: auto;
+
+    isolation: isolate;
+}
+
+.hero-section::before {
+
+    /* positioning */
+    position: absolute;
+    z-index: -1;
+
+    content: "";
+    inset: 0;
+    background-image: url(media/images/heroimg.jpg);
+
+    /* appearance */
+    pointer-events: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    opacity: 0.35;
+}
+
+.hero-section::after {
+
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: radial-gradient(ellipse at center,
+            transparent 50%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0.9) 90%);
+
+    pointer-events: none;
+}
+
+.mainhero-nav {
+
+    /* positoning */
+    z-index: 1;
+
+    /* layout */
+    display: flex;
+
+    /* sizing */
+    height: 5rem;
+    width: 80%;
+
+    /* spacing */
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.netflixLogo-img {
+
+    /* positioning */
+    z-index: 2;
+
+    /* sizing */
+    height: 40px;
+    width: 150px;
+
+    /* spacing */
+    margin: 0.5rem;
+}
+
+.heroSigninButton-a {
+
+    /* positioning */
+    z-index: 2;
+
+    /* layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* sizing */
+    height: 2rem;
+    width: 5rem;
+
+    /* spacing */
+    margin: 0.5rem;
+    padding: 0.8rem;
+
+    /* typography */
+    font-size: 1rem;
+    font-weight: 600;
+
+    /* colors */
+    color: var(--white);
+    background-color: var(--accent-red);
+
+    /* appearance */
+    border-radius: 5px;
+    border: none;
+}
+
+.heroSigninButton-a:hover {
+
+    /* colors */
+    background-color: var(--accent-red-dark);
+
+    /* appearance */
+    cursor: pointer;
+}
+
+.HeroContent-div {
+
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* sizing */
+    height: 80%;
+    width: 100%;
+
+    /* typography */
+    text-align: center;
+
+    /* colors */
+    color: var(--white);
+
+}
+
+.HeroContent-div h1 {
+
+    /* spacing */
+    margin-bottom: 1rem;
+    
+    /* typography */
+    font-weight: 750;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+
+}
+
+.HeroContent-div p {
+
+    /* spacing */
+    margin-bottom: 2rem;
+
+    /* typography */
+    font-weight: 600;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.HeroContent-div h3 {
+
+    /* spacing */
+
+    /* typography */
+    font-weight: 400;
+    font-size: 1rem;
+    word-spacing: 1px;
+}
