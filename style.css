@@ -175,7 +175,7 @@ main {
 
     /* spacing */
     margin-bottom: 1rem;
-    
+
     /* typography */
     font-weight: 750;
     font-size: clamp(2rem, 5vw, 3.5rem);
@@ -194,10 +194,78 @@ main {
 
 .HeroContent-div h3 {
 
-    /* spacing */
-
     /* typography */
     font-weight: 400;
     font-size: 1rem;
     word-spacing: 1px;
+}
+
+.emailSignin-div {
+
+    /* layout */
+    display: flex;
+    align-items: flex-end;
+
+    /* spacing */
+    gap: 0.8rem;
+
+    /* sizing */
+    height: 72px;
+}
+
+.emailSignin-div input {
+
+    /* sizing */
+    height: 56px;
+    width: 366px;
+
+    /* spacing */
+    padding: 0.6rem;
+
+    /* typography */
+    font-size: 1rem;
+    font-weight: 500;
+
+    /* colors */
+    color: var(--white);
+    background-color: rgba(42, 42, 42, 0.3);
+
+    /* appearance */
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.emailSignin-div input:focus {
+
+    outline: 2px solid white;
+}
+
+.emailSignin-div button {
+
+    /* sizing */
+    height: 56px;
+    width: 213px;
+
+    /* spacing */
+    padding: 0.2rem;
+
+    /* typography */
+    font-size: 1.5rem;
+    font-weight: 800;
+
+    /* colors */
+    color: var(--white);
+    background-color: var(--accent-red);
+
+    /* appearance */
+    border: none;
+
+}
+
+.emailSignin-div button:hover {
+
+    /* colors */
+    color: var(--white);
+    background-color: var(--accent-red);
+
 }
