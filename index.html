@@ -7,21 +7,23 @@
     <title>Netflix Clone</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav></nav>
+    <nav class="freeForWeek-nav">
+        <img id="giftIcon-img" src="media/icons/gift.png" alt="">
+        <p>New to Netflix? Try 7 Days for Rs 0.</p>
+    </nav>
 
     <main>
         <section class="hero-section">
 
             <nav class="mainhero-nav">
-                <img class="netflixLogo-img" src="media/images/logo.svg" alt="Netflix">
+                <a class="netflixLogo-a" href=""><img class="netflixLogo-img" src="media/images/logo.svg" alt="Netflix"></a>
                 <a class="heroSigninButton-a">
                     <span id="signin-span">Sign in</span>
                 </a>
@@ -30,13 +32,15 @@
             <div class="HeroContent-div">
 
                 <h1>Unlimited movies, TV <br> shows, and more</h1>
-                <p>Plans start Rs 250. Cancel anytime.</p>
+                <p id="heroPara1">Plans start Rs 250. Cancel anytime.</p>
                 <h3>Ready to watch? Enter your email to start your membership.</h3>
 
                 <div class="emailSignin-div">
                     <input id="emailInput" type="email" name="email" placeholder="Email address">
-                    <button>Get Started</button>
+                    <button>Try 7 Days for Rs 0 <i id="arrowIcon" class="fa-solid fa-chevron-down"></i></button>
                 </div>
+
+                <p id="heroPara2">New members only. Terms below.</p>
 
             </div>
 
