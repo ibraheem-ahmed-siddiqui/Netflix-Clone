@@ -29,6 +29,12 @@ body {
 
 main {
 
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     /* sizing */
     min-height: 100vh;
     width: 100%;
@@ -50,7 +56,7 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 1;
 
     /* layout */
     display: flex;
@@ -62,11 +68,11 @@ main {
     width: 100%;
 
     /* spacing */
-    gap: 0.4rem;
+    gap: 0.5rem;
 
     /* colors */
     color: white;
-    background: linear-gradient(to right, var(--gradient-left) 25%, var(--gradient-mid) 45%, var(--gradient-right) 100%);
+    background: linear-gradient(to right, var(--gradient-left)28%, var(--gradient-mid) 45%, var(--gradient-right) 100%);
 }
 
 #giftIcon-img {
@@ -77,6 +83,7 @@ main {
 
 .freeForWeek-nav p {
 
+    font-size: 0.96rem;
     font-weight: 700;
 }
 
@@ -136,6 +143,8 @@ main {
 
     /* layout */
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     /* sizing */
     height: 5rem;
@@ -143,8 +152,6 @@ main {
 
     /* spacing */
     margin: auto;
-    align-items: center;
-    justify-content: space-between;
 
 }
 
@@ -163,6 +170,7 @@ main {
 
     /* spacing */
     margin: 0.5rem;
+    margin-top: 1.2rem;
 }
 
 .heroSigninButton-a {
@@ -180,11 +188,10 @@ main {
     width: 5rem;
 
     /* spacing */
-    margin: 0.5rem;
     padding: 0.8rem;
 
     /* typography */
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
 
     /* colors */
@@ -361,15 +368,146 @@ main {
     /* colors */
     color: var(--grey);
 }
+/* ------------------------------------------------------------------ */
+
+/* Content Section */
+
+.content-section {
+
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* sizing */
+    height: auto;
+    width: 75%;
+}
+
+.shows-section {
+
+    width: 100%;
+}
+
+#trendingNow-h2 {
+
+    /* colors */
+    color: var(--white);
+}
+
+.showContainerList-ul {
+
+    /* sizing */
+    width: 100%;
+    max-width: 100%;
+
+    /* layout */
+    display: flex;
+    align-items: center;
+
+    /* appearance */
+    list-style: none;
+
+    /* overflow */
+    overflow-y: hidden;
+    overflow-x: auto;
+
+}
+
+.showContainerList-ul::-webkit-scrollbar {
+
+    display: none;
+}
+
+.showListElement-li {
+
+    flex: 0 0 auto;
+
+    /* spaicng */
+    padding: 0.5rem 1.5rem;
+}
+
+.showImage-span {
+
+    display: inline-block;
+
+    /* sizing */
+    height: 252px;
+    width: 180px;
+}
+
+#show1 {
+
+    /* appearance */
+    background-image: url(media/images/show1.webp);
+}
+
+#show2 {
+
+    /* appearance */
+    background-image: url(media/images/show2.webp);
+}
+
+#show3 {
+
+    /* appearance */
+    background-image: url(media/images/show3.webp);
+}
+
+#show4 {
+
+    /* appearance */
+    background-image: url(media/images/show4.webp);
+}
+
+#show5 {
+
+    /* appearance */
+    background-image: url(media/images/show5.webp);
+}
+
+#show6 {
+
+    /* appearance */
+    background-image: url(media/images/show6.webp);
+}
+
+#show7 {
+
+    /* appearance */
+    background-image: url(media/images/show7.webp);
+}
+
+#show8 {
+
+    /* appearance */
+    background-image: url(media/images/show8.webp);
+}
+
+#show9 {
+
+    /* appearance */
+    background-image: url(media/images/show9.webp);
+}
+
+#show10 {
+
+    /* appearance */
+    background-image: url(media/images/show10.webp);
+}
+
+/* ------------------------------------------------------------------ */
 
 
 /* MEDIA QUERIES */
 
 @media(max-width: 600px) {
-
+    
     .emailSignin-div input {
-
+        
         width: 100%;
     }
-
+    
 }
+
+/* ------------------------------------------------------------------ */
