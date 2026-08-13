@@ -17,6 +17,9 @@
     --gradient-left: #5c32bf;
     --gradient-mid: #8f2280;
     --gradient-right: #e40915;
+
+    --non-active-dark: #1a1a1a;
+    --active-dark: #333333;
 }
 
 html,
@@ -95,7 +98,7 @@ main {
 
     /* sizing */
     height: auto;
-    width: 100% ;
+    width: 100%;
     aspect-ratio: 16 / 9;
 
     /* spacing */
@@ -368,6 +371,7 @@ main {
     /* colors */
     color: var(--grey);
 }
+
 /* ------------------------------------------------------------------ */
 
 /* Content Section */
@@ -386,6 +390,10 @@ main {
 
 .shows-section {
 
+    /* positioning */
+    position: relative;
+
+    /* sizing */
     width: 100%;
 }
 
@@ -419,6 +427,69 @@ main {
     display: none;
 }
 
+.showScroll-button {
+
+    /* positioning */
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+
+    /* sizing */
+    height: 120px;
+    width: 24px;
+
+    /* spacing */
+    padding: 0.2rem;
+
+    /* colors */
+    background-color: var(--non-active-dark);
+
+    /* appearance */
+    border: none;
+    border-radius: 5px;
+
+    /* animations */
+    transform: translateY(-50%);
+}
+
+#showScrollButtonLeft-button {
+
+    /* positioning */
+    left: -4%;
+
+}
+
+#showScrollButtonRight-button {
+
+    /* positioning */
+    right: -4%;
+
+}
+
+.scrollArrowButton-img {
+
+    /* sizing */
+    width: 1rem;
+    aspect-ratio: 1/1;
+}
+
+#showScrollImageRight-img {
+
+    transform: rotate(180deg);
+}
+
+.showScroll-button:hover {
+
+    /* colors */
+    background-color: var(--active-dark);
+}
+
+.showScroll-button:hover .scrollArrowButton-img {
+
+    /* filters */
+    filter: brightness(0) invert(1);
+}
+
 .showListElement-li {
 
     flex: 0 0 auto;
@@ -429,11 +500,15 @@ main {
 
 .showImage-span {
 
+    /* layout */
     display: inline-block;
 
     /* sizing */
     height: 252px;
     width: 180px;
+
+    /* appearance */
+    border-radius: 8px;
 }
 
 #show1 {
@@ -502,12 +577,12 @@ main {
 /* MEDIA QUERIES */
 
 @media(max-width: 600px) {
-    
+
     .emailSignin-div input {
-        
+
         width: 100%;
     }
-    
+
 }
 
 /* ------------------------------------------------------------------ */
