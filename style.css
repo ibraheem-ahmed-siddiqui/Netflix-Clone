@@ -273,10 +273,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 
     /* sizing */
-    height: 72px;
+    width: 100%;
 
     /* spacing */
     margin-top: 0.4rem;
@@ -362,11 +361,9 @@ main {
 
 #heroPara2 {
 
-    /* typography */
-    /* font-size: 1rem; */
-
     /* spacing */
     margin: 0.4rem;
+    margin-top: 0.8rem;
 
     /* colors */
     color: var(--grey);
@@ -403,7 +400,7 @@ main {
     color: var(--white);
 }
 
-.showContainerList-ul {
+#showContainerList-ul {
 
     /* sizing */
     width: 100%;
@@ -420,6 +417,7 @@ main {
     overflow-y: hidden;
     overflow-x: auto;
 
+    scrollbar-width: none;
 }
 
 .showContainerList-ul::-webkit-scrollbar {
@@ -576,11 +574,33 @@ main {
 
 /* MEDIA QUERIES */
 
+@media(max-width: 900px) {
+
+    .emailSignin-div {
+        
+        flex-direction: column;
+    }
+
+}
+
 @media(max-width: 600px) {
 
-    .emailSignin-div input {
+    .hero-section {
 
-        width: 100%;
+        aspect-ratio: 9 / 16;
+    }
+
+    /* .emailSignin-div {
+
+    } */
+
+    .emailSignin-div input {
+        width: min(100%, 292px);
+    }
+
+    .emailSignin-div button {
+
+        width: min(100%, 292px);
     }
 
 }
